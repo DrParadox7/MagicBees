@@ -17,8 +17,7 @@ import cpw.mods.fml.common.FMLLog;
 public class VersionInfo
 {
 	public static final String ModName = "MagicBees";
-	public static final String Version = "@VERSION@";
-	public static final String MCVersion = "@MCVERSION@";
+	public static final String Version = "GRADLETOKEN_VERSION";
 	public static final String VersionURL = "https://raw.githubusercontent.com/MagicBees/MagicBees/master/etc/version-1.7.txt";
 	public static final String DownloadURL = "http://minecraft.curseforge.com/mc-mods/65764-magic-bees/files";
 	public static final String GUI_FACTORY_CLASS = "magicbees.client.gui.GuiFactory";
