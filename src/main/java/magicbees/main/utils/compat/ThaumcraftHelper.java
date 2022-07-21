@@ -482,7 +482,7 @@ public class ThaumcraftHelper implements IModHelper {
 				new AspectList().add(Aspect.TOOL, 1).add(Aspect.ARMOR, 1),
 				-2, 1, 1,
 				new ItemStack(Config.hiveFrameMagic))
-		.setPages(getResearchPage("MB_FrameMagic"), new ResearchPage((IArcaneRecipe) frameMagic))
+		.setPages(getResearchPage("MB_FrameMagic.1"), new ResearchPage((IArcaneRecipe) frameMagic))
 		.registerResearchItem();
 
 		input = new ItemStack(Config.hiveFrameMagic);
