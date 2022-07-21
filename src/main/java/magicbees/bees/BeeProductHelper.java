@@ -77,7 +77,7 @@ public class BeeProductHelper {
 			.addProduct(new ItemStack(Items.chicken), 0.12f)
 			.addSpecialty(new ItemStack(Items.melon), 0.20f);
 		BATTY.addProduct(Config.combs.getStackForType(CombType.FURTIVE), 0.10f)
-			.addSpecialty(new ItemStack(Items.string), 0.00001f);
+			.addSpecialty(new ItemStack(Items.string), 0.20f);
 		CHICKEN.addProduct(Config.combs.getStackForType(CombType.FURTIVE), 0.23f)
 			.addSpecialty(new ItemStack(Items.feather), 0.08f)
 			.addSpecialty(new ItemStack(Items.egg), 0.08f);

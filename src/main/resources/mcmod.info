@@ -1,9 +1,9 @@
 [
 {
-  "modid": "MagicBees",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
-  "name": "Magic Bees",
+  "modid": "${modId}",
+  "version": "${modVersion}",
+  "mcversion": "${minecraftVersion}",
+  "name": "${modName}",
   "url": "http://bit.ly/XFDvLY",
   "description": "Magic themed bee expansion for Forestry. TC4, Botania, EE3, AM 2, TE 3",
   "authors": [ "MysteriousAges" ],

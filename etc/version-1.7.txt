@@ -1,3 +1,0 @@
-2.4.3
-false
-Fixes a crash with EE3 integration.

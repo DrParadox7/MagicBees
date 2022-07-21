@@ -21,6 +21,7 @@ import cpw.mods.fml.common.network.NetworkRegistry;
 
 @Mod(
 		modid = VersionInfo.ModName,
+		name = "Magic Bees",
 		version = VersionInfo.Version,
 		dependencies = VersionInfo.Depends,
 		guiFactory = VersionInfo.GUI_FACTORY_CLASS
