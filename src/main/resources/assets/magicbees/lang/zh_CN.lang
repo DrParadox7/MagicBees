@@ -1,4 +1,4 @@
-language.name=Chinese
+language.name=简体中文
 language.region=CN
 language.code=zh_CN
 
@@ -29,6 +29,9 @@ item.manasteelGrafter.name=魔钢剪枝器
 item.thaumiumGrafter.name=奥法剪枝器
 item.magicbees:mysteriousMagnet.name=神秘磁铁
 item.moonDial.name=翡翠色月相盘
+
+item.voidScoop.name=虚空捕蜂网
+item.voidGrafter.name=虚空剪枝器
 
 #Tiles
 tile.effectJar.name=蜜蜂收集者的罐子
@@ -71,7 +74,6 @@ comb.TEcarbon=碳素蜂窝
 comb.TEelectric=电气蜂窝
 comb.TElux=流明蜂窝
 comb.TEendearing=可爱蜂窝
-comb.BMSanguine=鲜血蜂窝
 
 #Waxes
 wax.magic=魔力蜜蜡
@@ -167,14 +169,14 @@ liquid.liquiddna=液态DNA
 liquid.creosote=木榴油
 liquid.steam=蒸汽
 liquid.redstone=不稳定熔融红石
-liquid.glowstone=充能熔融荧石
+liquid.glowstone=充能熔融萤石
 liquid.ender=谐振熔融末影珍珠
 liquid.pyrotheum=烈焰之炽焱
 liquid.cryotheum=极寒之凛冰
 liquid.mana=元始魔力
 liquid.coal=液态煤炭
 
-#Moondial
+#Moondial & Mutation moon phase conditions
 moon.full=满月
 moon.gibbousWaning=亏凸月
 moon.gibbousWaxing=盈凸月
@@ -185,7 +187,7 @@ moon.crescentWaxing=凸娥眉月
 moon.new=新月
 
 # Alternate moon names for languages that require a different kind of localization. Remove # to activate.
-# If missing, will fall back on the non-alternate versions. 
+#	If missing, will fall back on the non-alternate versions.
 #moon.alt.full=
 #moon.alt.gibbousWaning=
 #moon.alt.gibbousWaxing=
@@ -213,6 +215,8 @@ tile.botania:flower.hibeescus.lore=这些尖(双)刺(关)会蜇人
 research.requiresBlock=需要一个%s作为基础
 research.requiresPhase=月相处于%s与%s之间时
 research.requiresPhaseSingle=月相为%s
+research.bonusPhase=在 %s 和 %s 之间更容易成功.
+research.bonusPhaseSingle=在 %s 时更容易成功.
 research.requiresNode=仅节点位于附近时才出现
 research.requiresNodeSpecific=当受到%s节点影响时才出现 
 research.requiresBiome=当处于%s这种生态群落才出现
@@ -228,7 +232,7 @@ magicbees.speciesMystical.description=在很多地方很常见，这种蜜蜂偶
 magicbees.speciesSorcerous=巫术
 magicbees.speciesSorcerous.description=喜欢温暖而干燥的环境,并且它们似乎有在干旱环境里聚汽成水的能力|Apinomicon
 magicbees.speciesUnusual=非凡
-magicbees.speciesUnusual.description="我的新收藏品:一种好奇宝宝一样的蜜蜂!"|初级养蜂人
+magicbees.speciesUnusual.description="我的新收藏品:一种好奇宝宝一样的蜜蜂!"|初级养蜂员
 magicbees.speciesAttuned=谐振
 magicbees.speciesAttuned.description=它们飞行时仿佛得到了空中无形的引路者的帮助.|Apinomicon
 
@@ -251,7 +255,7 @@ magicbees.speciesSupernatural.description=蜜蜂行走在不可视境界线之�
 
 magicbees.speciesEthereal=以太
 magicbees.speciesEthereal.description=幽灵般地，被来自天域的力量充能.|Apinomicon
-	
+
 magicbees.speciesWatery=水
 magicbees.speciesWatery.description=喜欢潮湿的地方和流动的水.|Apinomicon
 magicbees.speciesEarthen=土
@@ -267,7 +271,7 @@ magicbees.speciesScholarly=博学
 magicbees.speciesScholarly.description="我难以确信,但我觉得它们比我更聪明..."|Yorae,图书馆馆员
 magicbees.speciesSavant=专家
 magicbees.speciesSavant.description=lim(x^(i / pi)/ log(e * 7 - ln(32/x^-pi))).把这个解出来我就给你们蜂蜜.|Yorae的桌子上发现的便签
-	
+
 magicbees.speciesAware=感知
 magicbees.speciesAware.description="它们看得见你的灵魂!"|Florastar,养蜂专家
 magicbees.speciesSpirit=精神
@@ -278,7 +282,7 @@ magicbees.speciesSoul.description="Dread Pirate Roberts来收割你的灵魂啦!
 magicbees.speciesSkulking=诡隐
 magicbees.speciesSkulking.description=这些蜜蜂变得暴躁排外, 务必小心!|Apinomicon
 magicbees.speciesGhastly=幽魂
-magicbees.speciesGhastly.description="*叹息中*...真的,神秘?"|Taveria, 恼怒的养蜂人
+magicbees.speciesGhastly.description="*叹息中*...真的,神秘?"|Taveria, 恼怒的养蜂员
 magicbees.speciesSpidery=蜘蛛
 magicbees.speciesSpidery.description=蜘蛛蜂; 嗯.做蜘蛛蜂该做的事情.|佚名
 magicbees.speciesSmouldering=闷烧
@@ -308,7 +312,7 @@ magicbees.speciesLordly=贵族
 magicbees.speciesLordly.description=它们平和生活,共建和谐社会|古版Apinomicon残卷
 magicbees.speciesDoctoral=博士
 magicbees.speciesDoctoral.description="你们喜欢胶糖娃娃吗?"|戴着大围巾,手持蓝色盒子的陌生人
-	
+
 magicbees.speciesInfernal=地狱
 magicbees.speciesInfernal.description=诞生于地狱深处的蜂种，具有特殊的力量|Apinomicon
 magicbees.speciesHateful=憎恶
@@ -363,12 +367,12 @@ magicbees.speciesDiamond.description=闪光的结晶,硬比龙牙.钻石恒久�
 magicbees.speciesEmerald=宝石
 magicbees.speciesEmerald.description=据说它们曾造访伟大巫师统治之地，并将巫师之城的要素劫掠一空.|Apinomicon
 magicbees.speciesApatite=磷化
-magicbees.speciesApatite.description=这些东西真心是日夜牢骚不断.我关紧窗户躲进地下室，但蜜蜂尖锐的嗡嗡声却无处不在地透墙而过，乱我心绪.|养蜂人入门指南
+magicbees.speciesApatite.description=这些东西真心是日夜牢骚不断.我关紧窗户躲进地下室，但蜜蜂尖锐的嗡嗡声却无处不在地透墙而过，乱我心绪.|养蜂员入门指南
 
 magicbees.speciesMutable=善变
 magicbees.speciesMutable.description=多变的性质,善变的个性.|Apinomicon
 magicbees.speciesTransmuting=蜕变
-magicbees.speciesTransmuting.description="我发誓这是昨天用石头建造的!"|Sengir, 愤怒的养蜂人
+magicbees.speciesTransmuting.description="我发誓这是昨天用石头建造的!"|Sengir, 愤怒的养蜂员
 magicbees.speciesCrumbling=崩溃
 magicbees.speciesCrumbling.description=他们对周围环境有强烈的腐蚀作用,他们会迅速衰老.|Apinomicon
 
@@ -402,7 +406,7 @@ magicbees.speciesTCPure.description="蜜蜂中的卫士!"|MysteriousAges,神秘�
 magicbees.speciesTCHungry=饕餮
 magicbees.speciesTCHungry.description=至今人们仍然无从得知这群蜜蜂是怎么从节点中提取到纯粹的元始精华的,也无人知晓它们究竟做了什么,人们只知道,这种处理的结果是可怕的漩涡.|Apinomicon
 magicbees.speciesTCVoid=虚空
-# Description is gibberish; don't bother translating. <3|Friendly Chinese ver. of this notes:请勿翻译下面这个条目(原文为拉丁语而不是英语),原因详见en.wikipedia.org/wiki/Lorem_ipsum
+# Description is gibberish; don't bother translating. <3
 magicbees.speciesTCVoid.description=§kNeque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit|?????
 magicbees.speciesTCWispy=轻灵
 magicbees.speciesTCWispy.description=它们的语言支离破碎,难以理解,也许它们在和某种超自然的生物沟通?|Apinomicon
@@ -470,12 +474,12 @@ magicbees.speciesTEWinsome=迷人
 magicbees.speciesTEWinsome.description="我喜欢这一群,它们可爱极了!"|Jadedcat,整合包作者
 magicbees.speciesTEEndearing=可爱
 magicbees.speciesTEEndearing.description="催眠的力量,辅以邪恶的性情,这些蜜蜂怎么可能有这么可爱!"|Jadedcat,整合包作者
+magicbees.speciesTESignalus=信素
+magicbees.speciesTESignalus.description=这些蜜蜂是它们自己的安全措施.|Apinomicon
+magicbees.speciesTELumius=流明
+magicbees.speciesTELumius.description=相比于蜜蜂,其实它更像萤火虫,这个物种就像它的名字一样.|Apinomicon
 magicbees.speciesRSAFluxed=通量
 magicbees.speciesRSAFluxed.description="什么?蜜蜂可是管理员哦."|Marquis Muskrat
-magicbees.speciesBMBloody=血腥
-magicbees.speciesBMBloody.description=灌输以血之魔力,它们现在正追寻更强大的力量.|Apinomicon
-magicbees.speciesBMBound=束缚
-magicbees.speciesBMBound.description="你...一定会喜欢这个的!"|WayOfFlowingTime,不擅长开玩笑的人
 magicbees.speciesBotRooted=生根
 magicbees.speciesBotRooted.description="若以方(平)形(方)修剪,她们就不会在此扎(开)根(方)了."|MysteriousAges,不擅长开数学的玩笑
 magicbees.speciesBotBotanic=植物
@@ -507,26 +511,26 @@ magicbees.effectMoveSpeed=瞬息
 binniecore.allele.magicbees.effectMoveSpeed.desc=提升玩家移动速度
 magicbees.effectSlowSpeed=时光扭曲
 binniecore.allele.magicbees.effectSlowSpeed.desc=随时光流逝，或为玩家带来恶心和反胃
-magicbees.effectWithering=凋灵
+magicbees.effectWithering=凋零
 binniecore.allele.magicbees.effectWithering.desc=所经之玩家，必受凋零之诅咒
 magicbees.effectTransmuting=变幻
 binniecore.allele.magicbees.effectTransmuting.desc=令方块的材质受各种因素影响而变化无常
 magicbees.effectCrumbling=粉碎
 binniecore.allele.magicbees.effectCrumbling.desc=让硬的材料变软
-magicbees.effectInvisiblility=隐形
+magicbees.effectInvisibility=隐形
 binniecore.allele.magicbees.effectInvisiblility.desc=令玩家隐身
 magicbees.effectVisRecharge=再充能
 binniecore.allele.magicbees.effectVisRecharge.desc=为灵气节点充能
 magicbees.effectNodeEmpower=强充能
 binniecore.allele.magicbees.effectNodeEmpower.desc=永久提高灵气节点的能量
 magicbees.effectNodeRepair=放大
-binniecore.allele.magicbees.effectNodeEmpower.desc=给灵气节点带来活力
+binniecore.allele.magicbees.effectNodeRepair.desc=给灵气节点带来活力
 magicbees.effectNodeTainting=腐化
-binniecore.allele.magicbees.effectNodeEmpower.desc=污染灵气节点
+binniecore.allele.magicbees.effectNodeTainting.desc=污染灵气节点
 magicbees.effectNodePurifying=净化
-binniecore.allele.magicbees.effectNodeEmpower.desc=净化灵气节点
+binniecore.allele.magicbees.effectNodePurifying.desc=净化灵气节点
 magicbees.effectNodeRavening=掠夺
-binniecore.allele.magicbees.effectNodeEmpower.desc=以非正常的方式,让节点更加饥饿
+binniecore.allele.magicbees.effectNodeRavening.desc=以非正常的方式,让节点更加饥饿
 magicbees.effectBrainy=怒尸
 binniecore.allele.magicbees.effectBrainy.desc=随机生成强大的僵尸
 magicbees.effectBatty=火蝠
@@ -540,7 +544,7 @@ binniecore.allele.magicbees.effectSpidery.desc=随机生成蜘蛛
 magicbees.effectAblaze=火光
 binniecore.allele.magicbees.effectAblaze.desc=随机生成烈焰人
 magicbees.effectCanine=嚎叫
-binniecore.allele.magicbees.effectCurative.desc=随机生成狼
+binniecore.allele.magicbees.effectCanine.desc=随机生成狼
 magicbees.effectManaDrainer=漩涡
 binniecore.allele.magicbees.effectManaDrainer.desc=随机生成魔力爬行者
 magicbees.effectAMWisp=魂灵
@@ -589,7 +593,7 @@ classification.time.description=通过巧妙的时间控制能力,这种蜜蜂�
 classification.soul=灵魂
 classification.soul.description=它们在收集死者的魂魄,好可怕!|Apinomicon
 classification.abominable=厌恶
-classification.abominable.description=出生于灼热地狱的最深处,这种蜜蜂从来就没有给养蜂人留下过任何好的印象.|Apinomicon
+classification.abominable.description=出生于灼热地狱的最深处,这种蜜蜂从来就没有给养蜂员留下过任何好的印象.|Apinomicon
 classification.Extrinsic=外来
 classification.Extrinsic.description=究竟这些蜜蜂是从蜜蜂科生物中进化而来的,还是由别的生物独立进化而来的,至今仍不得而知.|Apinomicon
 classification.metallic=金属
@@ -666,6 +670,17 @@ tc.research_name.MB_VisAuraProvider=灵气蜂箱加速器
 tc.research_text.MB_VisAuraProvider=[MB] Vis(灵气)?Bis如何?
 tc.research_page.MB_VisAuraProvider.1=向罕见花粉中注以灵气,并与黄金结合,便可制造出一种不寻常的晶体,若给这种晶体提供一些节点里的Vis,它就可以创造出一个充能灵气场,籍此调节魔法蜂箱周围的环境,并自然地把蜜蜂吸引过来.
 
+tc.research_name.MB_ScoopVoid=虚空捕蜂网
+tc.research_text.MB_ScoopVoid=黑暗之网
+tc.research_page.MB_ScoopVoid.1=虚空金属是种奇怪的东西,现在该看看它可以为Apimancy带来什么了.虚空金属的自我再生特性也渗入了这种捕蜂网,真令人不安啊.<BR>希望它不会对蜜蜂造成太大影响...
+
+tc.research_name.MB_GrafterVoid=虚空剪枝器
+tc.research_text.MB_GrafterVoid=扭曲的杨柳
+tc.research_page.MB_GrafterVoid.1=毫无疑问,神秘锭是一种极好的材料,但你最近发现的虚空金属,在随后的实验中显示出了在工具材料方面的巨大前景. 纤巧的剪枝器与拥有自我修复能力的虚空金属,看起来是一对最佳拍档. <BR>与奥法剪枝器类似,虚空剪枝器同样脆弱.
+
+
+
+
 #Botania Lexicon entries
 magicbees.botania.lexicon.subtitle=[魔法蜜蜂]
 
@@ -676,7 +691,7 @@ magicbees.botania.lexicon.manasteelGrafter=&1魔钢剪枝器&0
 
 magicbees.botania.lexicon.beeAlfheim.title=艾尔芙海姆的魔法蜜蜂
 magicbees.botania.lexicon.beeAlfheim.trade=换取&b精灵雄蜂&0
-magicbees.botania.lexicon.beeAlfheim.0=&1精灵族养蜂人&0正急于探寻你 的蜜蜂的快乐，而且特别对你 可以提供的&1梦境雄蜂&0感兴趣。 作为回报,精灵们会以&b精灵雄 蜂&0为交换，这是艾尔芙海姆仅 有的一种蜜蜂。
+magicbees.botania.lexicon.beeAlfheim.0=&1精灵族养蜂员&0正急于探寻你 的蜜蜂的快乐，而且特别对你 可以提供的&1梦境雄蜂&0感兴趣。 作为回报,精灵们会以&b精灵雄 蜂&0为交换，这是艾尔芙海姆仅 有的一种蜜蜂。
 
 magicbees.botania.lexicon.beegonia.0=雄蜂是一个强健的聚居地的 未来的基石，但事实上，她们甚 至可以在一个你根本不知从 何下手的地方开始堆积起来。<br>现在隆重推出&1食蜂海棠&0，这是 一种解决蜜蜂过度拥挤的极 佳方案！只需把多余的雄蜂丢 给这朵花儿，她就会开始改 造蜜蜂的生命力并最终变为 魔力！ 
 magicbees.botania.lexicon.beegonia.1=她们并不是很挑剔，她们会在 工作时持续产出一定量的魔 力，虽然这看起来确实“复杂”： 蜜蜂提供了比普通蜜蜂更多 的魔力，管它什么意思。

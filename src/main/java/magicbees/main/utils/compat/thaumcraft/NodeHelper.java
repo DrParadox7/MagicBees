@@ -33,6 +33,9 @@ public class NodeHelper {
 
 	@SuppressWarnings("unchecked")
 	public static INode findNode(Chunk chunk, int x, int y, int z, int range) {
+        if (chunk == null)
+            return null;
+
 		Vec3 apiaryPos = Vec3.createVectorHelper(x, y, z);
 		List<TileEntity> tileEntities = new ArrayList<TileEntity>(((Map<ChunkPosition, TileEntity>)chunk.chunkTileEntityMap).values());
 		Collections.shuffle(tileEntities);
@@ -52,17 +55,19 @@ public class NodeHelper {
 	@SuppressWarnings("unchecked")
 	public static List<INode> findNodesInChunkWithinRange(Chunk chunk, int x, int y, int z, int range) {
 		List<INode> nodes = new ArrayList<INode>();
-		Vec3 apiaryPos = Vec3.createVectorHelper(x, y, z);
-		List<TileEntity> tileEntities = new ArrayList<TileEntity>(((Map<ChunkPosition, TileEntity>)chunk.chunkTileEntityMap).values());
-		for (TileEntity entity : tileEntities) {
-			if (entity instanceof INode) {
-				Vec3 tePos = Vec3.createVectorHelper(entity.xCoord, entity.yCoord, entity.zCoord);
-				Vec3 result = apiaryPos.subtract(tePos);
-				if (result.lengthVector() <= range) {
-					nodes.add((INode)entity);
-				}
-			}
-		}
+		if (chunk != null) {
+            Vec3 apiaryPos = Vec3.createVectorHelper(x, y, z);
+            List<TileEntity> tileEntities = new ArrayList<TileEntity>(((Map<ChunkPosition, TileEntity>) chunk.chunkTileEntityMap).values());
+            for (TileEntity entity : tileEntities) {
+                if (entity instanceof INode) {
+                    Vec3 tePos = Vec3.createVectorHelper(entity.xCoord, entity.yCoord, entity.zCoord);
+                    Vec3 result = apiaryPos.subtract(tePos);
+                    if (result.lengthVector() <= range) {
+                        nodes.add((INode) entity);
+                    }
+                }
+            }
+        }
 		
 		return nodes;
 	}

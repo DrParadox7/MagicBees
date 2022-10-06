@@ -67,7 +67,9 @@ public class BlockUtil {
 		
 		for (int chunkX = minChunkX; chunkX <= maxChunkX; ++chunkX) {
 			for (int chunkZ = minChunkZ; chunkZ <= maxChunkZ; ++chunkZ) {
-				searchChunks.add(world.getChunkFromChunkCoords(chunkX, chunkZ));
+                Chunk chunk = world.getChunkFromChunkCoords(chunkX, chunkZ);
+                if (chunk != null)
+				    searchChunks.add(chunk);
 			}
 		}
 		
