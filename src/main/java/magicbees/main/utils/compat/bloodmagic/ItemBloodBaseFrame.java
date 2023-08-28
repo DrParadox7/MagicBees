@@ -44,7 +44,7 @@ public class ItemBloodBaseFrame extends EnergyItems implements IHiveFrame {
 
         @Override
         public float getProductionModifier(IBeeGenome genome, float currentModifier) {
-            return 3f; // buffed post additive production change
+            return 2f; // buffed post additive production change
         }
 
         @Override
