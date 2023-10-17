@@ -18,8 +18,10 @@ Adding the following mods will result in additional features being unlocked:
 
 ## License
 
-MagicBees is licesed under the WTFPL ( http://www.wtfpl.net/ )
+MagicBees' code is licensed under the WTFPL ( http://www.wtfpl.net/ )
+You can do whatever. Just don't ask us to support it if we didn't distribute it. =D
 
-Seriously, do whatever. Just don't ask us to support it if we didn't distribute it. =D
+Graphic asset introduced or updated by this fork are subject under [Creative Commons Attribution 4.0 International License][cc-by].
+[![CC BY 4.0][cc-by-shield]][cc-by]
 
-We didn't distribute it if you downloaded it from a site other than CurseForge, or from a modpack that does not use CurseForge as their source.
+Use and redistribution of these assets as source or compiled code is allowed as long as credit is given to their original creators.
