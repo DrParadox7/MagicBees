@@ -1118,7 +1118,8 @@ public class BeeGenomeManager {
         genome[EnumBeeChromosome.NOCTURNAL.ordinal()] = Allele.getBaseAllele("boolTrue");
 
         if (ExtraBeesHelper.isActive()) {
-            genome[EnumBeeChromosome.EFFECT.ordinal()] = Allele.getAllele("extrabees.effect.lightning");
+            genome[EnumBeeChromosome.EFFECT.ordinal()] = Allele
+                    .getAllele(binnie.extrabees.genetics.effect.ExtraBeesEffect.LIGHTNING.getUID());
         }
 
         return genome;
