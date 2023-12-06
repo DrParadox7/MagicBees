@@ -57,4 +57,9 @@ public class ItemMagicHiveFrame extends Item implements IHiveFrame {
     public boolean isBookEnchantable(ItemStack itemstack1, ItemStack itemstack2) {
         return false;
     }
+
+    @Override
+    public boolean isRepairable() {
+        return this.type != HiveFrameType.OBLIVION;
+    }
 }
