@@ -73,9 +73,9 @@ public class ArsMagicaHelper implements IModHelper {
         ArsMagicaHelper.resourceBlock = BlockInterface.getBlock(Name, "AMOres");
         ArsMagicaHelper.blackOrchid = BlockInterface.getBlock(Name, "blueOrchid");
         ArsMagicaHelper.desertNova = BlockInterface.getBlock(Name, "desertNova");
-        ArsMagicaHelper.aum = BlockInterface.getBlock(Name, "aum");
+        ArsMagicaHelper.aum = BlockInterface.getBlock(Name, "Aum");
         ArsMagicaHelper.wakebloom = BlockInterface.getBlock(Name, "wakebloom");
-        ArsMagicaHelper.tarmaRoot = BlockInterface.getBlock(Name, "tarmaRoot");
+        ArsMagicaHelper.tarmaRoot = BlockInterface.getBlock(Name, "TarmaRoot");
     }
 
     private static void getItems() {

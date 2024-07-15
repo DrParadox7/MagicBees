@@ -68,13 +68,11 @@ public class FlowerProviderArsMagicaFlower extends FlowerProvider implements IFl
         if (world.getBlock(x, y, z).isAir(world, x, y, z)) {
             if (blockDown == Blocks.dirt || blockDown == Blocks.grass) {
                 int dart = world.rand.nextInt(100);
-                Block block;
+                Block block = ArsMagicaHelper.tarmaRoot;
                 if (dart > 60) {
                     block = ArsMagicaHelper.blackOrchid;
                 } else if (dart > 30) {
                     block = ArsMagicaHelper.aum;
-                } else {
-                    block = ArsMagicaHelper.tarmaRoot;
                 }
                 world.setBlock(x, y, z, block);
                 flag = true;
