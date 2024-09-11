@@ -426,14 +426,16 @@ public class CraftingManager {
         GameRegistry.addRecipe(
                 new ShapedOreRecipe(new ItemStack(Items.emerald), "xxx", "xxx", "xxx", 'x', "nuggetEmerald"));
 
-        GameRegistry.addRecipe(
-                new ShapedOreRecipe(
-                        ItemInterface.getItemStack("apatite"),
-                        "xxx",
-                        "xxx",
-                        "xxx",
-                        'x',
-                        Config.nuggets.getStackForType(NuggetType.APATITE)));
+        if (ItemInterface.getItemStack("apatite") != null) {
+            GameRegistry.addRecipe(
+                    new ShapedOreRecipe(
+                            ItemInterface.getItemStack("apatite"),
+                            "xxx",
+                            "xxx",
+                            "xxx",
+                            'x',
+                            Config.nuggets.getStackForType(NuggetType.APATITE)));
+        }
 
         output = Config.miscResources.getStackForType(ResourceType.DIMENSIONAL_SINGULARITY);
         GameRegistry.addRecipe(
