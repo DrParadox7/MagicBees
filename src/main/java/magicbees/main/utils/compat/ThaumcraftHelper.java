@@ -760,9 +760,11 @@ public class ThaumcraftHelper implements IModHelper {
                 new ItemStack(item.getItem(), 1, ForestryHelper.BlockResource.APATITE.ordinal()),
                 list.copy());
         item = ItemInterface.getItemStack(ForestryHelper.Name, "apatite");
-        ThaumcraftApi.registerObjectTag(
+        if(item != null) {
+            ThaumcraftApi.registerObjectTag(
                 new ItemStack(item.getItem(), 1, item.getItemDamage()),
                 list.copy().add(Aspect.CRYSTAL, 2));
+        }
 
         list = new AspectList().add(Aspect.MOTION, 2).add(Aspect.FLIGHT, 1);
         item = ItemInterface.getItemStack("beeDroneGE");
